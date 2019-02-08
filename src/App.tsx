@@ -16,7 +16,7 @@ class App extends React.Component<{}, myState> {
     this.onSliderChange = this.onSliderChange.bind(this)
     this.makeApiRequest = this.makeApiRequest.bind(this)
   }
-  ws = new WebSocket('ws://localhost:3001/websocket')
+  ws = new WebSocket('ws://10.0.0.20:3001/websocket')
 
   componentDidMount() {
     this.ws.onopen = () => {
@@ -39,7 +39,7 @@ class App extends React.Component<{}, myState> {
   makeApiRequest = (value: number) => {
     this.onSliderChange(value)
     console.log('123')
-    fetch('http://localhost:3002/changelight', {
+    fetch('http://10.0.0.20:3002/changelight', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
