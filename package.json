@@ -1,0 +1,52 @@
+{
+  "name": "lichtsteuerung",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "@types/engine.io-client": "^3.1.2",
+    "@types/jest": "23.3.13",
+    "@types/node": "10.12.21",
+    "@types/rc-slider": "^8.6.0",
+    "@types/rc-time-picker": "^3.4.0",
+    "@types/react": "16.7.22",
+    "@types/react-dom": "16.0.11",
+    "@types/rebass": "^3.0.0",
+    "@types/socket.io-client": "^1.4.32",
+    "@types/styled-components": "^4.1.8",
+    "engine.io-client": "^3.3.2",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "moment": "^2.24.0",
+    "rc-slider": "^8.6.4",
+    "rc-time-picker": "^3.6.2",
+    "react": "^16.7.0",
+    "react-datetime": "^2.16.3",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.3",
+    "react-svg": "^7.2.6",
+    "rebass": "^3.0.1",
+    "socket.io": "^2.2.0",
+    "styled-components": "^4.1.3",
+    "styled-components-ts": "0.0.15",
+    "typescript": "3.3.1",
+    "ws": "^6.1.3"
+  },
+  "scripts": {
+    "https": "HTTPS=true react-scripts start",
+    "start": " react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prestart": "cp -f ./cert/server.pem ./node_modules/webpack-dev-server/ssl"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

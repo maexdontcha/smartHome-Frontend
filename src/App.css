@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+}
+
+/* button {
+  color: white;
+  padding: 10px;
+  background: #ee7600;
+  border: none;
+  width: 100%;
+  margin: 3px;
+  font-size: 1.5em;
+} */
+
+.rc-slider {
+  position: relative;
+  width: 100%;
+  touch-action: pan-x;
+  box-sizing: border-box;
+  cursor: grab;
+  overflow: hidden;
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+}
+
+.rc-slider-vertical {
+  height: 100%;
+  border-radius: 4px;
+  /* padding: 0 5px; */
+}
+
+.rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  background: #444;
+  height: 100%;
+}
+
+.rc-slider-track {
+  position: absolute;
+  left: 0;
+  background-color: #555;
+  touch-action: pan-x;
+}
+.rc-slider-vertical .rc-slider-track {
+  bottom: 0;
+  touch-action: pan-x;
+}
+
+.rc-slider-handle {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  margin-bottom: -300px;
+  outline: none;
+  z-index: 1000;
+  /* margin-left: -5px;
+  margin-bottom: -17px;
+  width: 306px;
+  height: 30px;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
+  border: solid 2px #ee7600;
+  background-color: #a65200;
+  border-radius: 4px;
+  touch-action: pan-x; */
+}
+.rc-slider.rc-slider-vertical,
+.rc-slider-rail,
+.rc-slider-track {
+  width: 100px;
+  border-radius: 20px;
+}
